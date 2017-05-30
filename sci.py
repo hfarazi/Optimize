@@ -10,5 +10,5 @@ def lossFun(input):
     return math.sin(x)*math.sin(y)
 
 x0 = np.array([0,0])
-res = minimize(lossFun, x0, method='Powell',options={'xtol': 1e-8, 'disp': True})
+res = minimize(lossFun, x0, method='Nedler-Mead',options={'xtol': 1e-8, 'disp': True})
 print(res.x)
